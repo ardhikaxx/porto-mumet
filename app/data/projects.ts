@@ -115,5 +115,14 @@ export const projects = [
     image: '/projects/13.jpg',
     link: 'https://batik-sesa-bojonegoro.vercel.app/',
     year: 2025
+  },
+  {
+    id: 14,
+    title: 'Website Operasional JasaMarga Jalan Tol',
+    description: 'Website operasional untuk JasaMarga Jalan Tol yang menyediakan fitur lengkap meliputi: Dashboard untuk memantau status operasional jalan tol, Manajemen Projek untuk mengelola data proyek pekerjaan, Manajemen Lokasi untuk pengelolaan lokasi dan jalur lajur jalan tol, Manajemen Pekerjaan untuk mendata dan mengelola berbagai jenis pekerjaan pemeliharaan, Manajemen SFO (Scheduled Follow Up Operations) untuk mengelola aktivitas dan laporan pekerjaan, Cek Lokasi untuk memeriksa detail lokasi jalan tol, serta Settings untuk pengaturan sistem.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/14.jpg',
+    link: 'https://github.com/ardhikaxx/jasamarga-web',
+    year: 2025
   }
 ];
