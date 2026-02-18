@@ -16,12 +16,11 @@ export default function Home() {
       <main className="pt-20">
         <section className="relative py-16 px-4 overflow-hidden bg-gray-50 dark:bg-[#0a0a0a]">
           <div className="absolute inset-0 bg-linear-to-br from-gray-50 dark:from-[#0a0a0a] via-white dark:via-[#111111] to-gray-50 dark:to-[#0a0a0a]"></div>
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNjNDFlMmUiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-30 dark:opacity-30"></div>
           
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-6">
-                <span className="w-2 h-2 bg-[#c41e2e] rounded-full animate-pulse"></span>
+                <span className="w-2 h-2 bg-[#c41e2e] rounded-full"></span>
                 Jasa Pembuatan Website & Aplikasi Mobile
               </div>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
