@@ -4,7 +4,7 @@ export const projects = [
     title: 'Sistem Manajemen Data Kesehatan Posyandu - Akses Tenaga Kesehatan',
     description: 'Aplikasi web untuk mengelola data kesehatan balita di posyandu. Dirancang khusus untuk kader dan bidan, platform ini menyederhanakan manajemen data pertumbuhan anak, imunisasi, dan rekam medis. Proyek akhir semester genap 2024 ini berhasil mendapatkan pendanaan melalui Program Kreativitas Mahasiswa (PKM).',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'Laravel', 'JavaScript'],
-    image: '/projects/1.svg',
+    image: '/projects/1.jpg',
     link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
     year: 2024
   },
@@ -13,7 +13,7 @@ export const projects = [
     title: 'Sistem Manajemen Data Kesehatan Posyandu - Akses Orang Tua',
     description: 'Aplikasi mobile pendamping sistem web yang memungkinkan orang tua memantau rekam medis, pertumbuhan, dan riwayat imunisasi anak. Dikembangkan sebagai proyek akhir semester genap 2024 dan juga mendapatkan pendanaan Program Kreativitas Mahasiswa (PKM).',
     technologies: ['Dart', 'Flutter'],
-    image: '/projects/2.svg',
+    image: '/projects/2.jpg',
     link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
     year: 2024
   },
@@ -22,7 +22,7 @@ export const projects = [
     title: 'Website Landing Page Demo Aplikasi PKM-PM 2024',
     description: 'Website pendukung proyek PKM 2024 yang menyediakan sumber daya terkait Sistem Informasi Manajemen Data Kesehatan Posyandu. Fitur termasuk download aplikasi mobile, eksplorasi fitur web app, dan dokumentasi kegiatan proyek.',
     technologies: ['HTML', 'Bootstrap', 'JavaScript'],
-    image: '/projects/3.svg',
+    image: '/projects/3.jpg',
     link: 'https://web-app-posyandu.vercel.app/',
     year: 2024
   },
@@ -31,7 +31,7 @@ export const projects = [
     title: 'Website Travel - PutraKJ Trans',
     description: 'Website perusahaan transportasi PutraKJ Trans yang saya kembangkan untuk meningkatkan kehadiran online mereka. Menampilkan informasi layanan, pilihan armada, dan proses booking yang intuitif.',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-    image: '/projects/4.svg',
+    image: '/projects/4.jpg',
     link: 'https://putrakttransjember.vercel.app/',
     year: 2024
   },
@@ -40,7 +40,7 @@ export const projects = [
     title: 'Website Kelompok Tani Kopi Sumber Kembang',
     description: 'Website promosi untuk Kelompok Tani Kopi Sumber Kembang yang menampilkan praktik pertanian dan produk kopi mereka. Platform ini memperkenalkan aktivitas komunitas dan upaya pertanian berkelanjutan.',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-    image: '/projects/5.svg',
+    image: '/projects/5.jpg',
     link: 'https://kopisumberkembangjember.vercel.app/',
     year: 2024
   },
@@ -49,7 +49,7 @@ export const projects = [
     title: 'Website GlucoWise - Akses Tenaga Kesehatan',
     description: 'Website GlucoWise yang menyediakan layanan untuk pengguna di aplikasi mobile, seperti manajemen data kesehatan, rekam medis, manajemen screening dan banyak lagi untuk memenuhi layanan di aplikasi mobile',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'Laravel', 'JavaScript'],
-    image: '/projects/6.svg',
+    image: '/projects/6.jpg',
     link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
     year: 2024
   },
@@ -58,7 +58,7 @@ export const projects = [
     title: 'Aplikasi Mobile GlucoWise - Akses Umum',
     description: 'Aplikasi mobile untuk pengguna umum yang ingin memeriksa dengan cek gula darah dengan fitur GlucoCheck, pengguna juga bisa melakukan Screening, pengguna mendapatkan informasi edukasi berupa video edukasi, artikel edukasi, juga chat bot ai yaitu Glucozia AI.',
     technologies: ['Dart', 'Flutter'],
-    image: '/projects/7.svg',
+    image: '/projects/7.jpg',
     link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
     year: 2024
   },
@@ -67,7 +67,7 @@ export const projects = [
     title: 'Website Landing Page Demo - Sistem GlucoWise',
     description: 'Website showcase untuk aplikasi GlucoWise yang memungkinkan pengguna mendownload aplikasi mobile langsung dari situs. GlucoWise adalah solusi web dan mobile untuk edukasi dan manajemen data diabetes.',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-    image: '/projects/8.svg',
+    image: '/projects/8.jpg',
     link: 'https://glucowise-app.vercel.app/',
     year: 2025
   },
@@ -76,7 +76,7 @@ export const projects = [
     title: 'Glucozia AI - Chatbot Edukasi Diabetes',
     description: 'Website chatbot AI yang menyediakan edukasi diabetes personalisasi. Dibangun dengan HTML, CSS, Tailwind CSS, dan JavaScript. Glucozia berfungsi sebagai asisten virtual 24/7 untuk pemantauan kesehatan dan rekomendasi nutrisi.',
     technologies: ['HTML', 'CSS', 'Tailwind', 'JavaScript'],
-    image: '/projects/9.svg',
+    image: '/projects/9.jpg',
     link: 'https://glucozia-ai.vercel.app/',
     year: 2025
   },
@@ -85,7 +85,7 @@ export const projects = [
     title: 'Website AITeC VII 2025 - Politeknik Negeri Jember',
     description: 'Website resmi Agricultural Innovation Technology Competition (AITeC) 2025 bertepatan Politeknik Negeri Jember sebagai tuan rumah untuk perlombaan nasional AITeC ke 7 2025. Saya bertanggung jawab untuk pengembangan front-end.',
     technologies: ['Tailwind', 'JavaScript', 'GSAP'],
-    image: '/projects/10.svg',
+    image: '/projects/10.jpg',
     link: 'https://aitec.bakorma.org/',
     year: 2025
   },
@@ -94,7 +94,7 @@ export const projects = [
     title: "Website E-Commerce UMKM Rezti's Batik Jember",
     description: 'Platform digital untuk mendukung UMKM batik melalui penjualan online dan layanan edukasi membatik. Dibuat dengan tampilan modern dan responsif untuk memberikan pengalaman pengguna yang optimal.',
     technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
-    image: '/projects/11.svg',
+    image: '/projects/11.jpg',
     link: 'https://web-reztis-batik-jember.vercel.app/',
     year: 2025
   },
@@ -103,7 +103,7 @@ export const projects = [
     title: 'Aplikasi Keuangan UMKM - Rahmad HandyCraft',
     description: 'Rahmad HandyCraft App adalah aplikasi khusus umkm Rahmad Handycraft untuk mencatat pemasukan dan pengeluaran harian, mengelola data supplier, produk, bahan baku, pelanggan, hingga karyawan dan honor, semua dalam satu aplikasi sederhana dan efisien.',
     technologies: ['Flutter', 'Dart'],
-    image: '/projects/12.svg',
+    image: '/projects/12.jpg',
     link: 'https://handycraft-web.vercel.app/',
     year: 2025
   },
@@ -112,7 +112,7 @@ export const projects = [
     title: 'Aplikasi Keuangan UMKM - Batik Sesa Bojonegoro',
     description: 'Batik Sesa App adalah aplikasi khusus umkm Batik Sesa yang berasal dari daerah Bojonegoro untuk mencatat pemasukan harian, mengelola daftar ketrsediaan bahan baku, daftar kain, daftar keperluan membatik, hingga karyawan dan honor.',
     technologies: ['Flutter', 'Dart'],
-    image: '/projects/13.svg',
+    image: '/projects/13.jpg',
     link: 'https://batik-sesa-bojonegoro.vercel.app/',
     year: 2025
   }
