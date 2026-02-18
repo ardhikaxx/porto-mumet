@@ -10,15 +10,23 @@ export default function Navbar() {
     const savedTheme = localStorage.getItem("theme") as "dark" | "light" | null;
     if (savedTheme) {
       setTheme(savedTheme);
-      document.documentElement.classList.toggle("light", savedTheme === "light");
     }
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    if (theme === "light") {
+      root.classList.add("light");
+      root.classList.remove("dark");
+    } else {
+      root.classList.add("dark");
+      root.classList.remove("light");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-    document.documentElement.classList.toggle("light", newTheme === "light");
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
   const navItems = [
@@ -30,12 +38,12 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
-      <nav className="flex items-center gap-1 px-2 py-2 bg-[#0a0a0a]/70 dark:bg-[#0a0a0a]/70 backdrop-blur-xl border border-[#262626] dark:border-[#262626] rounded-full shadow-2xl">
+      <nav className="flex items-center gap-1 px-2 py-2 bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-xl border border-gray-200 dark:border-[#262626] rounded-full shadow-2xl">
         {navItems.map((item) => (
           <a
             key={item.href}
             href={item.href}
-            className="flex items-center gap-2 px-4 py-2 text-gray-400 hover:text-white dark:text-gray-400 dark:hover:text-white rounded-full hover:bg-[#262626] dark:hover:bg-[#262626] transition-all duration-200 font-medium"
+            className="flex items-center gap-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-[#c41e2e] dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#262626] rounded-full transition-all duration-200 font-medium"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.icon} />
@@ -46,7 +54,7 @@ export default function Navbar() {
         
         <button
           onClick={toggleTheme}
-          className="flex items-center gap-2 px-3 py-2 text-gray-400 hover:text-white dark:text-gray-400 dark:hover:text-white rounded-full hover:bg-[#262626] dark:hover:bg-[#262626] transition-all duration-200"
+          className="flex items-center gap-2 px-3 py-2 text-gray-600 dark:text-gray-400 hover:text-[#c41e2e] dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#262626] rounded-full transition-all duration-200"
           aria-label="Toggle theme"
         >
           {theme === "dark" ? (
