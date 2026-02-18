@@ -152,4 +152,13 @@ export const projects = [
     link: 'https://github.com/ardhikaxx/rspd-klaten-web',
     year: 2026
   },
+  {
+    id: 18,
+    title: 'Website Operasinal GYM GenZ Fitness Center',
+    description: 'Website operasional GYM GenZ Fitness Center yang menyediakan fitur lengkap meliputi: Dashboard untuk memantau statistik gym, Manajemen Pengguna untuk mengelola data anggota gym, Food Plan untuk mengelola rencana makan dan nutrisi, Jadwal Workout untuk mengelola jadwal latihan, Manajemen Workout untuk mengelola berbagai jenis latihan dan gerakan, Feedback Pengguna untuk mengelola kritik dan saran dari anggota, Manajemen Admin untuk mengelola administrator sistem, serta Profile untuk pengaturan profil admin.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/18.jpg',
+    link: 'https://github.com/ardhikaxx/gym-genz-api.git',
+    year: 2026
+  },
 ];
