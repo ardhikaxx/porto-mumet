@@ -2,9 +2,11 @@
 
 import { projects } from "./data/projects";
 import { services } from "./data/services";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import dynamic from "next/dynamic";
 import ProjectCard from "./components/ProjectCard";
+
+const Navbar = dynamic(() => import("./components/Navbar"), { ssr: false });
+const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
 
 export default function Home() {
   return (
