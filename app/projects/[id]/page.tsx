@@ -56,7 +56,7 @@ export default async function ProjectDetail({ params }: Props) {
           <div className="absolute inset-0 bg-gradient-to-r from-[#c41e2e]/10 via-[#c41e2e]/5 to-transparent rounded-3xl blur-3xl opacity-50"></div>
           <div className="relative bg-white dark:bg-[#171717] rounded-3xl shadow-2xl overflow-hidden border border-gray-200 dark:border-[#262626]">
             <div className="relative h-80 md:h-[500px] bg-gradient-to-br from-gray-100 dark:from-[#262626] to-gray-50 dark:to-[#171717]">
-              <Image src={project.image} alt={project.title} fill className="object-cover" priority />
+              <Image src={project.image} alt={project.title} fill className="object-cover" sizes="100vw" priority />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               
               <div className="absolute top-6 right-6 flex items-center gap-3">

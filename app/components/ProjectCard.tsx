@@ -30,7 +30,9 @@ export default function ProjectCard({ project, variant = "default" }: ProjectCar
             src={project.image}
             alt={project.title}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover group-hover:scale-110 transition-transform duration-700"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300" />
           
@@ -75,13 +77,15 @@ export default function ProjectCard({ project, variant = "default" }: ProjectCar
       href={`/projects/${project.id}`}
       className="group relative bg-white dark:bg-[#171717] rounded-3xl shadow-md hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 dark:border-[#262626] hover:border-[#c41e2e]"
     >
-      <div className="relative h-56 overflow-hidden">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover group-hover:scale-110 transition-transform duration-700"
-        />
+        <div className="relative h-56 overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover group-hover:scale-110 transition-transform duration-700"
+            loading="lazy"
+          />
         
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
         
