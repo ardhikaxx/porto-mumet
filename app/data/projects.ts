@@ -206,4 +206,13 @@ export const projects = [
     link: 'https://github.com/ardhikaxx/apocare',
     year: 2026
   },
+  {
+    id: 24,
+    title: 'Website SI-BESTI - Sistem Bimbing & Evaluasi Siklus Tidur Ibu',
+    description: 'Aplikasi web untuk membantu ibu memantau, mengevaluasi, dan memperbaiki pola tidur melalui catatan harian, evaluasi berkala, serta rekomendasi praktis. Fitur lengkap meliputi: Autentikasi pengguna (login & registrasi), Dashboard ringkas untuk melihat ringkasan data, Pencatatan sleep tracking (tambah, ubah, hapus, dan detail) dengan statistik, Quality Test (pengisian tes, konfirmasi, dan hasil histori), Murottal untuk relaksasi, Profil pengguna (update data diri), Manajemen data ibu untuk admin (lihat, detail, ubah status, hapus) dengan statistik, Monitoring sleep tracking pengguna & detail tidur, serta Profil admin & update password. Dirancang sederhana dan ramah untuk pengguna maupun tenaga kesehatan.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/24.jpg',
+    link: 'https://github.com/ardhikaxx/si-besti',
+    year: 2026
+  },
 ];
