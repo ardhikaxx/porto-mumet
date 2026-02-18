@@ -1,11 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { projects } from "./data/projects";
 import { services } from "./data/services";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -57,43 +56,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
-                <Link
-                  href={`/projects/${project.id}`}
-                  key={project.id}
-                  className="group bg-white dark:bg-[#171717] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-[#262626] hover:border-[#c41e2e]/50"
-                >
-                  <div className="relative h-52 bg-linear-to-br from-gray-100 dark:from-[#262626] to-gray-50 dark:to-[#171717] overflow-hidden">
-                    <Image src={project.image} alt={project.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute top-3 right-3">
-                      <span className="px-3 py-1 bg-gray-900/80 dark:bg-[#0a0a0a]/80 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
-                        {project.year}
-                      </span>
-                    </div>
-                  </div>
-                  
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 group-hover:text-[#c41e2e] transition-colors line-clamp-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
-                      {project.description}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.slice(0, 3).map((tech, idx) => (
-                        <span key={idx} className="px-3 py-1 bg-gray-100 dark:bg-[#262626] text-gray-700 dark:text-gray-300 text-xs font-medium rounded-full">
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <span className="px-3 py-1 bg-[#c41e2e]/20 text-[#c41e2e] text-xs font-medium rounded-full">
-                          +{project.technologies.length - 3}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </Link>
+                <ProjectCard key={project.id} project={project} />
               ))}
             </div>
           </div>

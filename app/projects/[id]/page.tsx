@@ -4,6 +4,7 @@ import { projects } from "../../data/projects";
 import { notFound } from "next/navigation";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import ProjectCard from "../../components/ProjectCard";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -130,23 +131,7 @@ export default async function ProjectDetail({ params }: Props) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {projects.filter((p) => p.id !== project.id).slice(0, 3).map((relatedProject) => (
-              <Link key={relatedProject.id} href={`/projects/${relatedProject.id}`} className="group bg-white dark:bg-[#171717] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-[#262626] hover:border-[#c41e2e]/50">
-                <div className="relative h-44 bg-gradient-to-br from-gray-100 dark:from-[#262626] to-gray-50 dark:to-[#171717] overflow-hidden">
-                  <Image src={relatedProject.image} alt={relatedProject.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-3 right-3">
-                    <span className="px-2 py-1 bg-gray-900/80 dark:bg-[#0a0a0a]/80 backdrop-blur-sm text-white text-xs font-medium rounded-md">{relatedProject.year}</span>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#c41e2e] transition-colors line-clamp-2">{relatedProject.title}</h3>
-                  <div className="flex flex-wrap gap-1">
-                    {relatedProject.technologies.slice(0, 2).map((tech, index) => (
-                      <span key={index} className="px-2 py-0.5 bg-gray-100 dark:bg-[#262626] text-gray-600 dark:text-gray-400 text-xs rounded">{tech}</span>
-                    ))}
-                  </div>
-                </div>
-              </Link>
+              <ProjectCard key={relatedProject.id} project={relatedProject} variant="compact" />
             ))}
           </div>
         </div>
