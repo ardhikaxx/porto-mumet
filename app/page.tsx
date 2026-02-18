@@ -7,12 +7,12 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
+    <div className="min-h-screen bg-[#0a0a0a] dark:bg-[#0a0a0a] bg-white light:bg-white text-gray-900 light:text-gray-900 text-white dark:text-white">
       <Navbar />
 
       <main className="pt-20">
-        <section id="home" className="relative py-16 px-4 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#0a0a0a]"></div>
+        <section id="home" className="relative py-16 px-4 overflow-hidden bg-[#0a0a0a] dark:bg-[#0a0a0a] light:bg-gray-50">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] dark:from-[#0a0a0a] light:from-gray-50 via-[#111111] dark:via-[#111111] light:via-white to-[#0a0a0a] dark:to-[#0a0a0a] light:to-gray-50"></div>
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNjNDFlMmUiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-30"></div>
           
           <div className="max-w-7xl mx-auto relative z-10">
@@ -21,10 +21,10 @@ export default function Home() {
                 <span className="w-2 h-2 bg-[#c41e2e] rounded-full animate-pulse"></span>
                 Jasa Pembuatan Website & Aplikasi Mobile
               </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 light:text-gray-900 text-white dark:text-white mb-6 leading-tight">
                 Dari <span className="text-[#c41e2e]">Mumet</span>, Jadi <span className="text-[#c41e2e]">Beres</span>
               </h1>
-              <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+              <p className="text-xl text-gray-600 light:text-gray-600 text-gray-400 dark:text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
                 Bikin produk digital yang rapi, cepat, dan siap jual. Website, Mobile App, AI/ML, IoT, dan UI/UX dari ide sampai launch.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="py-24 px-4 bg-[#0a0a0a]">
+        <section id="projects" className="py-24 px-4 bg-[#0a0a0a] dark:bg-[#0a0a0a] light:bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-4">
@@ -55,10 +55,10 @@ export default function Home() {
                 </svg>
                 Portfolio Kami
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 light:text-gray-900 text-white dark:text-white mb-4">
                 Projek <span className="text-[#c41e2e]"> Terbaru</span>
               </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+              <p className="text-gray-600 light:text-gray-600 text-gray-400 dark:text-gray-400 max-w-2xl mx-auto text-lg">
                 Berikut adalah beberapa projek yang telah kami selesaikan untuk klien dari berbagai industri.
               </p>
             </div>
@@ -68,9 +68,9 @@ export default function Home() {
                 <Link
                   href={`/projects/${project.id}`}
                   key={project.id}
-                  className="group bg-[#171717] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-[#262626] hover:border-[#c41e2e]/50"
+                  className="group bg-[#171717] dark:bg-[#171717] light:bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-[#262626] dark:border-[#262626] light:border-gray-200 hover:border-[#c41e2e]/50"
                 >
-                  <div className="relative h-52 bg-gradient-to-br from-[#262626] to-[#171717] overflow-hidden">
+                  <div className="relative h-52 bg-gradient-to-br from-[#262626] dark:from-[#262626] light:from-gray-100 to-[#171717] dark:to-[#171717] light:to-white overflow-hidden">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -79,23 +79,23 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-3 right-3">
-                      <span className="px-3 py-1 bg-[#0a0a0a]/80 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
+                      <span className="px-3 py-1 bg-[#0a0a0a]/80 dark:bg-[#0a0a0a]/80 light:bg-gray-900/80 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
                         {project.year}
                       </span>
                     </div>
                   </div>
                   
                   <div className="p-6">
-                    <h3 className="text-lg font-bold text-white mb-3 group-hover:text-[#c41e2e] transition-colors line-clamp-2">
+                    <h3 className="text-lg font-bold text-gray-900 light:text-gray-900 text-white dark:text-white mb-3 group-hover:text-[#c41e2e] transition-colors line-clamp-2">
                       {project.title}
                     </h3>
-                    <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                    <p className="text-gray-600 light:text-gray-600 text-gray-400 dark:text-gray-400 text-sm mb-4 line-clamp-2">
                       {project.description}
                     </p>
                     
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.slice(0, 3).map((tech, idx) => (
-                        <span key={idx} className="px-3 py-1 bg-[#262626] text-gray-300 text-xs font-medium rounded-full">
+                        <span key={idx} className="px-3 py-1 bg-[#262626] dark:bg-[#262626] light:bg-gray-100 text-gray-300 light:text-gray-700 dark:text-gray-300 text-xs font-medium rounded-full">
                           {tech}
                         </span>
                       ))}
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services" className="py-24 px-4 bg-[#111111]">
+        <section id="services" className="py-24 px-4 bg-[#111111] dark:bg-[#111111] light:bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-4">
@@ -121,11 +121,11 @@ export default function Home() {
                 </svg>
                 Apa yang Kami Tawarkan
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 light:text-gray-900 text-white dark:text-white mb-4">
                 Layanan <span className="text-[#c41e2e]">Kami</span>
               </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-                Kami menyediakan berbagai layanan pengembangan digital untuk membantu bisnis Anda berkembang.
+              <p className="text-gray-600 light:text-gray-600 text-gray-400 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+                kami menyediakan berbagai layanan pengembangan digital untuk membantu bisnis Anda berkembang.
               </p>
             </div>
 
@@ -133,16 +133,16 @@ export default function Home() {
               {services.map((service) => {
                 const IconComponent = service.icon;
                 return (
-                  <div key={service.id} className="group bg-[#171717] rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#262626] hover:border-[#c41e2e]/50 cursor-pointer">
+                  <div key={service.id} className="group bg-[#171717] dark:bg-[#171717] light:bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#262626] dark:border-[#262626] light:border-gray-200 hover:border-[#c41e2e]/50 cursor-pointer">
                     <div className="flex items-start space-x-4">
                       <div className="shrink-0 w-14 h-14 bg-gradient-to-br from-[#c41e2e]/20 to-[#c41e2e]/5 rounded-xl flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-[#c41e2e] group-hover:to-[#a01828] transition-all duration-300">
                         <IconComponent className="w-7 h-7 text-[#c41e2e] group-hover:text-white transition-colors duration-300" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#c41e2e] transition-colors">
+                        <h3 className="text-lg font-bold text-gray-900 light:text-gray-900 text-white dark:text-white mb-2 group-hover:text-[#c41e2e] transition-colors">
                           {service.name}
                         </h3>
-                        <p className="text-gray-400 text-sm leading-relaxed">
+                        <p className="text-gray-600 light:text-gray-600 text-gray-400 dark:text-gray-400 text-sm leading-relaxed">
                           {service.description}
                         </p>
                       </div>
