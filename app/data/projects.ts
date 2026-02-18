@@ -1,58 +1,119 @@
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Platform e-commerce lengkap dengan fitur keranjang belanja, pembayaran, dan manajemen produk. Dilengkapi dashboard admin untuk监控 penjualan.",
-    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    image: "/assets/projek/1.svg",
+    title: 'Sistem Manajemen Data Kesehatan Posyandu - Akses Tenaga Kesehatan',
+    description: 'Aplikasi web untuk mengelola data kesehatan balita di posyandu. Dirancang khusus untuk kader dan bidan, platform ini menyederhanakan manajemen data pertumbuhan anak, imunisasi, dan rekam medis. Proyek akhir semester genap 2024 ini berhasil mendapatkan pendanaan melalui Program Kreativitas Mahasiswa (PKM).',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'Laravel', 'JavaScript'],
+    image: '/projects/1.svg',
+    link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
+    year: 2024
   },
   {
     id: 2,
-    title: "Mobile Banking App",
-    description: "Aplikasi mobile banking dengan fitur transfer, cek saldo, dan histori transaksi. Dilengkapi dengan keamanan biometrik dan notifikasi real-time.",
-    technologies: ["React Native", "TypeScript", "Firebase", "Redux"],
-    image: "/assets/projek/2.svg",
+    title: 'Sistem Manajemen Data Kesehatan Posyandu - Akses Orang Tua',
+    description: 'Aplikasi mobile pendamping sistem web yang memungkinkan orang tua memantau rekam medis, pertumbuhan, dan riwayat imunisasi anak. Dikembangkan sebagai proyek akhir semester genap 2024 dan juga mendapatkan pendanaan Program Kreativitas Mahasiswa (PKM).',
+    technologies: ['Dart', 'Flutter'],
+    image: '/projects/2.svg',
+    link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
+    year: 2024
   },
   {
     id: 3,
-    title: "Company Portfolio",
-    description: "Website portfolio perusahaan dengan desain modern dan responsif. Menampilkan layanan, team, dan kontak dengan animasi smooth.",
-    technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    image: "/assets/projek/3.svg",
+    title: 'Website Landing Page Demo Aplikasi PKM-PM 2024',
+    description: 'Website pendukung proyek PKM 2024 yang menyediakan sumber daya terkait Sistem Informasi Manajemen Data Kesehatan Posyandu. Fitur termasuk download aplikasi mobile, eksplorasi fitur web app, dan dokumentasi kegiatan proyek.',
+    technologies: ['HTML', 'Bootstrap', 'JavaScript'],
+    image: '/projects/3.svg',
+    link: 'https://web-app-posyandu.vercel.app/',
+    year: 2024
   },
   {
     id: 4,
-    title: "Restaurant Reservation",
-    description: "Sistem reservasi restoran dengan pemilihan meja, menu, dan pembayaran online. Includes waitlist management.",
-    technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
-    image: "/assets/projek/4.svg",
+    title: 'Website Travel - PutraKJ Trans',
+    description: 'Website perusahaan transportasi PutraKJ Trans yang saya kembangkan untuk meningkatkan kehadiran online mereka. Menampilkan informasi layanan, pilihan armada, dan proses booking yang intuitif.',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    image: '/projects/4.svg',
+    link: 'https://putrakttransjember.vercel.app/',
+    year: 2024
   },
   {
     id: 5,
-    title: "Healthcare Dashboard",
-    description: "Dashboard untuk manajemen pasien, jadwal dokter, dan laporan medis. Fitur export PDF dan integrasi dengan sistem RS.",
-    technologies: ["React", "Django", "PostgreSQL", "Chart.js"],
-    image: "/assets/projek/5.svg",
+    title: 'Website Kelompok Tani Kopi Sumber Kembang',
+    description: 'Website promosi untuk Kelompok Tani Kopi Sumber Kembang yang menampilkan praktik pertanian dan produk kopi mereka. Platform ini memperkenalkan aktivitas komunitas dan upaya pertanian berkelanjutan.',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    image: '/projects/5.svg',
+    link: 'https://kopisumberkembangjember.vercel.app/',
+    year: 2024
   },
   {
     id: 6,
-    title: "Social Media App",
-    description: "Aplikasi sosial media dengan fitur post, like, comment, dan direct message. Supports real-time updates.",
-    technologies: ["Flutter", "Firebase", "GetX", "Dio"],
-    image: "/assets/projek/6.svg",
+    title: 'Website GlucoWise - Akses Tenaga Kesehatan',
+    description: 'Website GlucoWise yang menyediakan layanan untuk pengguna di aplikasi mobile, seperti manajemen data kesehatan, rekam medis, manajemen screening dan banyak lagi untuk memenuhi layanan di aplikasi mobile',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'Laravel', 'JavaScript'],
+    image: '/projects/6.svg',
+    link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
+    year: 2024
   },
   {
     id: 7,
-    title: "Learning Management System",
-    description: "Platform pembelajaran online dengan video streaming, kuis, dan progress tracking. Dilengkapi dengan forum diskusi.",
-    technologies: ["Next.js", "Prisma", "MySQL", "AWS S3"],
-    image: "/assets/projek/7.svg",
+    title: 'Aplikasi Mobile GlucoWise - Akses Umum',
+    description: 'Aplikasi mobile untuk pengguna umum yang ingin memeriksa dengan cek gula darah dengan fitur GlucoCheck, pengguna juga bisa melakukan Screening, pengguna mendapatkan informasi edukasi berupa video edukasi, artikel edukasi, juga chat bot ai yaitu Glucozia AI.',
+    technologies: ['Dart', 'Flutter'],
+    image: '/projects/7.svg',
+    link: 'https://youtu.be/ouWihtoRrXQ?si=i9-c8RCqJMOmwfLo',
+    year: 2024
   },
   {
     id: 8,
-    title: "POS System",
-    description: "Sistem point of sale untuk retail dengan inventori management, laporan penjualan, dan multi-user support.",
-    technologies: ["Electron", "React", "SQLite", "Thermal Printer"],
-    image: "/assets/projek/8.svg",
+    title: 'Website Landing Page Demo - Sistem GlucoWise',
+    description: 'Website showcase untuk aplikasi GlucoWise yang memungkinkan pengguna mendownload aplikasi mobile langsung dari situs. GlucoWise adalah solusi web dan mobile untuk edukasi dan manajemen data diabetes.',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    image: '/projects/8.svg',
+    link: 'https://glucowise-app.vercel.app/',
+    year: 2025
   },
+  {
+    id: 9,
+    title: 'Glucozia AI - Chatbot Edukasi Diabetes',
+    description: 'Website chatbot AI yang menyediakan edukasi diabetes personalisasi. Dibangun dengan HTML, CSS, Tailwind CSS, dan JavaScript. Glucozia berfungsi sebagai asisten virtual 24/7 untuk pemantauan kesehatan dan rekomendasi nutrisi.',
+    technologies: ['HTML', 'CSS', 'Tailwind', 'JavaScript'],
+    image: '/projects/9.svg',
+    link: 'https://glucozia-ai.vercel.app/',
+    year: 2025
+  },
+  {
+    id: 10,
+    title: 'Website AITeC VII 2025 - Politeknik Negeri Jember',
+    description: 'Website resmi Agricultural Innovation Technology Competition (AITeC) 2025 bertepatan Politeknik Negeri Jember sebagai tuan rumah untuk perlombaan nasional AITeC ke 7 2025. Saya bertanggung jawab untuk pengembangan front-end.',
+    technologies: ['Tailwind', 'JavaScript', 'GSAP'],
+    image: '/projects/10.svg',
+    link: 'https://aitec.bakorma.org/',
+    year: 2025
+  },
+  {
+    id: 11,
+    title: "Website E-Commerce UMKM Rezti's Batik Jember",
+    description: 'Platform digital untuk mendukung UMKM batik melalui penjualan online dan layanan edukasi membatik. Dibuat dengan tampilan modern dan responsif untuk memberikan pengalaman pengguna yang optimal.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/11.svg',
+    link: 'https://web-reztis-batik-jember.vercel.app/',
+    year: 2025
+  },
+  {
+    id: 12,
+    title: 'Aplikasi Keuangan UMKM - Rahmad HandyCraft',
+    description: 'Rahmad HandyCraft App adalah aplikasi khusus umkm Rahmad Handycraft untuk mencatat pemasukan dan pengeluaran harian, mengelola data supplier, produk, bahan baku, pelanggan, hingga karyawan dan honor, semua dalam satu aplikasi sederhana dan efisien.',
+    technologies: ['Flutter', 'Dart'],
+    image: '/projects/12.svg',
+    link: 'https://handycraft-web.vercel.app/',
+    year: 2025
+  },
+  {
+    id: 13,
+    title: 'Aplikasi Keuangan UMKM - Batik Sesa Bojonegoro',
+    description: 'Batik Sesa App adalah aplikasi khusus umkm Batik Sesa yang berasal dari daerah Bojonegoro untuk mencatat pemasukan harian, mengelola daftar ketrsediaan bahan baku, daftar kain, daftar keperluan membatik, hingga karyawan dan honor.',
+    technologies: ['Flutter', 'Dart'],
+    image: '/projects/13.svg',
+    link: 'https://batik-sesa-bojonegoro.vercel.app/',
+    year: 2025
+  }
 ];
