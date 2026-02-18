@@ -14,10 +14,8 @@ export default function Home() {
       <Navbar />
 
       <main className="pt-20">
-        <section className="relative py-16 px-4 overflow-hidden bg-gray-50 dark:bg-[#0a0a0a]">
-          <div className="absolute inset-0 bg-linear-to-br from-gray-50 dark:from-[#0a0a0a] via-white dark:via-[#111111] to-gray-50 dark:to-[#0a0a0a]"></div>
-          
-          <div className="max-w-7xl mx-auto relative z-10">
+        <section className="relative py-16 px-4 bg-gray-50 dark:bg-[#0a0a0a]">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-6">
                 <span className="w-2 h-2 bg-[#c41e2e] rounded-full"></span>
@@ -81,13 +79,11 @@ export default function Home() {
               {services.map((service) => {
                 const IconComponent = service.icon;
                 return (
-                  <div key={service.id} className="group relative bg-white dark:bg-[#171717] rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-[#262626] hover:border-[#c41e2e]/30 cursor-pointer overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#c41e2e]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div key={service.id} className="group relative bg-white dark:bg-[#171717] rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-[#262626] hover:border-[#c41e2e]/30 cursor-pointer overflow-hidden">
                     <div className="relative z-10">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#c41e2e] to-[#a01828] rounded-2xl shadow-lg shadow-[#c41e2e]/30 mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#c41e2e] to-[#a01828] rounded-2xl shadow-lg shadow-[#c41e2e]/30 mb-6">
                         <IconComponent className="w-8 h-8 text-white" />
                       </div>
-                      <div className="absolute top-6 right-6 w-12 h-12 bg-[#c41e2e]/10 rounded-full blur-xl group-hover:bg-[#c41e2e]/20 transition-all duration-300"></div>
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-[#c41e2e] transition-colors duration-300">
                         {service.name}
                       </h3>
@@ -102,8 +98,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="py-24 px-4 bg-linear-to-r from-[#c41e2e] to-[#a01828] relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+        <section id="contact" className="py-24 px-4 bg-gradient-to-r from-[#c41e2e] to-[#a01828] relative overflow-hidden">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Siap Mengembangkan Bisnis Anda?
