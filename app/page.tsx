@@ -80,18 +80,24 @@ export default function Home() {
               {services.map((service) => {
                 const IconComponent = service.icon;
                 return (
-                  <div key={service.id} className="group bg-white dark:bg-[#171717] rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-[#262626] hover:border-[#c41e2e]/50 cursor-pointer">
-                    <div className="flex items-start space-x-4">
-                      <div className="shrink-0 w-14 h-14 bg-linear-to-br from-[#c41e2e]/20 to-[#c41e2e]/5 rounded-xl flex items-center justify-center group-hover:bg-linear-to-br group-hover:from-[#c41e2e] group-hover:to-[#a01828] transition-all duration-300">
-                        <IconComponent className="w-7 h-7 text-[#c41e2e] group-hover:text-white transition-colors duration-300" />
+                  <div key={service.id} className="group relative bg-white dark:bg-[#171717] rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-[#262626] hover:border-[#c41e2e]/30 cursor-pointer overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#c41e2e]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#c41e2e] to-[#a01828] rounded-2xl shadow-lg shadow-[#c41e2e]/30 mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
+                        <IconComponent className="w-8 h-8 text-white" />
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#c41e2e] transition-colors">
-                          {service.name}
-                        </h3>
-                        <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                          {service.description}
-                        </p>
+                      <div className="absolute top-6 right-6 w-12 h-12 bg-[#c41e2e]/10 rounded-full blur-xl group-hover:bg-[#c41e2e]/20 transition-all duration-300"></div>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-[#c41e2e] transition-colors duration-300">
+                        {service.name}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="mt-4 flex items-center gap-2 text-[#c41e2e] font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        <span>Pelajari selengkapnya</span>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
                       </div>
                     </div>
                   </div>
