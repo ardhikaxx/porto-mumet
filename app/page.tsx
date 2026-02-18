@@ -1,11 +1,13 @@
+"use client";
+
 import { projects } from "./data/projects";
 import { services } from "./data/services";
 import dynamic from "next/dynamic";
 import ProjectCard from "./components/ProjectCard";
 import ServiceIcons from "./components/ServiceIcons";
 
-const Navbar = dynamic(() => import("./components/Navbar"), { ssr: false });
-const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
+const Navbar = dynamic(() => import("./components/Navbar"));
+const Footer = dynamic(() => import("./components/Footer"));
 
 export default function Home() {
   return (
