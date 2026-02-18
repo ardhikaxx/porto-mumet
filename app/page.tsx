@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
 
       <main className="pt-20">
-        <section className="relative py-16 px-4 overflow-hidden bg-gray-50 dark:bg-[#0a0a0a]">
+        <section id="home" className="relative py-16 px-4 overflow-hidden bg-gray-50 dark:bg-[#0a0a0a]">
           <div className="max-w-7xl mx-auto">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-6">
