@@ -93,12 +93,6 @@ export default function Home() {
                       <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                         {service.description}
                       </p>
-                      <div className="mt-4 flex items-center gap-2 text-[#c41e2e] font-medium text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                        <span>Pelajari selengkapnya</span>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </div>
                     </div>
                   </div>
                 );
