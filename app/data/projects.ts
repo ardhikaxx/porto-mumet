@@ -143,4 +143,13 @@ export const projects = [
     link: 'https://github.com/ardhikaxx/web-smk-muhammadiyah-1-berbek',
     year: 2025
   },
+  {
+    id: 17,
+    title: 'Website Sistem Informasi RSPD Klaten',
+    description: 'Website sistem informasi Radio Siaran Pemerintah Daerah (RSPD) Klaten yang menyediakan fitur lengkap meliputi: Dashboard untuk memantau statistik dan aktivitas radio, Manajemen Berita untuk mengelola konten berita, Manajemen Program Siaran untuk mengelola jadwal dan program siaran radio, serta Pengaturan untuk konfigurasi sistem.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/17.jpg',
+    link: 'https://github.com/ardhikaxx/rspd-klaten-web',
+    year: 2026
+  },
 ];
