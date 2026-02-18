@@ -179,4 +179,13 @@ export const projects = [
     link: 'https://github.com/ardhikaxx/sistem-nara',
     year: 2026
   },
+  {
+    id: 21,
+    title: 'Website SIPKES (Sistem Informasi Polije Kesehatan) - Poli Gigi',
+    description: 'Website sistem informasi kesehatan untuk Poli Gigi Politeknik Negeri Jember yang menyediakan fitur lengkap meliputi: Pendaftaran pasien baru dan pencarian pasien, Dashboard untuk melihat statistik dan data pasien, Pemeriksaan awal untuk intake pasien, Antrean poli gigi untuk mengelola antrean pasien, Pemeriksaan poli gigi dengan Odontogram interatif untuk visualisasi kondisi gigi pasien, Riwayat pemeriksaan poli gigi untuk melihat histori pengobatan, Data obat untuk manajemen inventaris obat, General Consent dan Informed Consent untuk persetujuan medis, Surat Keterangan Sehat dan Surat Keterangan Sakit untuk administrasi medis, Laporan kunjungan untuk statistik kunjungan pasien, Laporan 10 Besar Penyakit untuk analisis data penyakit, serta manajemen data meliputi tenaga kesehatan, dokter, layanan, dan poli. Sistem ini terintegrasi dengan autentikasi berbasis role untuk tenaga kesehatan.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/21.jpg',
+    link: 'https://github.com/ardhikaxx/web-sipkes.git',
+    year: 2026
+  },
 ];
