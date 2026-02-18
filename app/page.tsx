@@ -1,5 +1,3 @@
-"use client";
-
 import { projects } from "./data/projects";
 import { services } from "./data/services";
 import dynamic from "next/dynamic";
@@ -14,99 +12,35 @@ export default function Home() {
       <Navbar />
 
       <main className="pt-20">
-        <section className="relative py-16 px-4 bg-gray-50 dark:bg-[#0a0a0a]">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-6">
-                <span className="w-2 h-2 bg-[#c41e2e] rounded-full"></span>
-                Jasa Pembuatan Website & Aplikasi Mobile
-              </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Dari <span className="text-[#c41e2e]">Mumet</span>, Jadi <span className="text-[#c41e2e]">Beres</span>
-              </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-                Bikin produk digital yang rapi, cepat, dan siap jual. Website, Mobile App, AI/ML, IoT, dan UI/UX dari ide sampai launch.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://mumetin.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-linear-to-r from-[#c41e2e] to-[#a01828] text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:shadow-[#c41e2e]/30 transition-all duration-300 transform hover:-translate-y-1">
-                  Hubungi Kami
-                </a>
-                <button onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} className="inline-flex items-center justify-center gap-2 border-2 border-[#c41e2e] text-[#c41e2e] px-8 py-4 rounded-full font-semibold hover:bg-[#c41e2e] hover:text-white transition-all duration-300">
-                  Lihat Projek
-                </button>
-              </div>
+        <section className="py-16 px-4 bg-gray-50 dark:bg-[#0a0a0a]">
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+              Dari <span className="text-[#c41e2e]">Mumet</span>, Jadi <span className="text-[#c41e2e]">Beres</span>
+            </h1>
+            <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-10">
+              Bikin produk digital yang rapi, cepat, dan siap jual.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://mumetin.vercel.app/" target="_blank" rel="noopener noreferrer" className="bg-[#c41e2e] text-white px-8 py-4 rounded-full font-semibold">
+                Hubungi Kami
+              </a>
+              <button onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })} className="border-2 border-[#c41e2e] text-[#c41e2e] px-8 py-4 rounded-full font-semibold">
+                Lihat Projek
+              </button>
             </div>
           </div>
         </section>
 
-        <section id="projects" className="py-24 px-4 bg-white dark:bg-[#0a0a0a]">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-4">
-                Portfolio Kami
-              </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-                Projek <span className="text-[#c41e2e]"> Terbaru</span>
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-                Berikut adalah beberapa projek yang telah kami selesaikan untuk klien dari berbagai industri.
-              </p>
-            </div>
+        <LazyProjects />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <LazyServices />
 
-        <section id="services" className="py-24 px-4 bg-gray-50 dark:bg-[#111111]">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c41e2e]/10 rounded-full text-[#c41e2e] font-medium text-sm mb-4">
-                Apa yang Kami Tawarkan
-              </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-                Layanan <span className="text-[#c41e2e]">Kami</span>
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-                Kami menyediakan berbagai layanan pengembangan digital untuk membantu bisnis Anda berkembang.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service) => {
-                const IconComponent = service.icon;
-                return (
-                  <div key={service.id} className="group relative bg-white dark:bg-[#171717] rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-[#262626] hover:border-[#c41e2e]/30 cursor-pointer overflow-hidden">
-                    <div className="relative z-10">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#c41e2e] to-[#a01828] rounded-2xl shadow-lg shadow-[#c41e2e]/30 mb-6">
-                        <IconComponent className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-[#c41e2e] transition-colors duration-300">
-                        {service.name}
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                        {service.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="py-24 px-4 bg-gradient-to-r from-[#c41e2e] to-[#a01828] relative overflow-hidden">
-          <div className="max-w-4xl mx-auto text-center relative z-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+        <section id="contact" className="py-24 px-4 bg-[#c41e2e]">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Siap Mengembangkan Bisnis Anda?
             </h2>
-            <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-              Hubungi kami sekarang untuk konsultasi gratis dan mendapatkan penawaran terbaik untuk projek Anda.
-            </p>
-            <a href="https://mumetin.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white text-[#c41e2e] px-10 py-5 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-xl">
+            <a href="https://mumetin.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-[#c41e2e] px-10 py-5 rounded-full font-semibold">
               Mulai Proyek
             </a>
           </div>
@@ -116,4 +50,28 @@ export default function Home() {
       <Footer />
     </div>
   );
+}
+
+function LazyProjects() {
+  return (
+    <section id="projects" className="py-24 px-4 bg-white dark:bg-[#0a0a0a]">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            Projek <span className="text-[#c41e2e]">Terbaru</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LazyServices() {
+  const ServiceIcons = dynamic(() => import("./components/ServiceIcons"), { ssr: false });
+  return <ServiceIcons services={services} />;
 }
