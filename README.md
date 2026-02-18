@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Porto Mumet.in - Portfolio Website
 
-## Getting Started
+Portfolio profesional untuk layanan pembuatan website dan aplikasi mobile.
 
-First, run the development server:
+## Fitur
+
+- **Hero Section** - Tampilan menarik dengan Call-to-Action
+- **Portfolio Projek** - Showcase projek-projek yang telah diselesaikan
+- **Layanan** - Berbagai layanan pengembangan digital
+- **Contact** - Tombol CTA untuk menghubungi klien
+- **Dark/Light Mode** - Toggle tema gelap/terang
+- **Responsive Design** - Tampilan optimal di semua perangkat
+- **Optimized Performance** - Loading cepat dengan Next.js optimization
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Icons**: React Icons
+- **Deployment**: Vercel
+
+## Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
+## Installation
 
 ```bash
+# Clone repository
+git clone https://github.com/ardhikaxx/porto-mumet.git
+
+# Masuk ke direktori
+cd porto-mumet
+
+# Install dependencies
+npm install
+
+# Jalankan development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Build project
+npm run build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Jalankan production server
+npm start
+```
 
-## Learn More
+## Lint
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Struktur Folder
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+porto-app/
+├── app/
+│   ├── components/       # Komponen React
+│   │   ├── Footer.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── ProjectCard.tsx
+│   │   ├── ServiceIcons.tsx
+│   │   └── ThemeProvider.tsx
+│   ├── data/            # Data statis
+│   │   ├── projects.ts
+│   │   └── services.ts
+│   ├── projects/[id]/   # Halaman detail projek
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Halaman utama
+├── public/             # Static assets
+│   └── projects/       # Gambar projek
+├── next.config.ts     # Next.js config
+├── tailwind.config.ts # Tailwind config
+└── package.json
+```
 
-## Deploy on Vercel
+## Kontribusi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork repository ini
+2. Buat branch baru (`git checkout -b fitur- baru`)
+3. Commit perubahan (`git commit -m 'Tambah fitur baru'`)
+4. Push ke branch (`git push origin fitur baru`)
+5. Buat Pull Request
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Lisensi
+
+MIT License
+
+## Kontak
+
+- Instagram: [@mumet.in](https://www.instagram.com/mumet.in/)
+- WhatsApp: +62 859-3364-8537
+- GitHub: [ardhikaxx](https://github.com/ardhikaxx)
+- Website: [mumetin.vercel.app](https://mumetin.vercel.app/)
+
+---
+
+Dibuat dengan ❤️ oleh Porto Mumet.in
