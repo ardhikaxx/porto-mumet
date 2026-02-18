@@ -7,6 +7,7 @@ export default function Navbar() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
+    e.stopPropagation();
     const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -26,7 +27,7 @@ export default function Navbar() {
         {navItems.map((item) => (
           <a
             key={item.targetId}
-            href={`#${item.targetId}`}
+            href="#"
             onClick={(e) => handleNavClick(e, item.targetId)}
             className="flex items-center gap-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-[#c41e2e] dark:hover:text-white hover:bg-gray-100 dark:hover:bg-[#262626] rounded-full transition-all duration-200 font-medium"
           >
