@@ -165,9 +165,18 @@ export const projects = [
     id: 19,
     title: 'Aplikasi Mobile GYM GenZ Fitness Center',
     description: 'Aplikasi mobile GYM GenZ Fitness Center yang menyediakan fitur lengkap meliputi: Dashboard untuk memantau workout challenge, riwayat workout, dan statistik user seperti BMI dan status kesehatan, Workout untuk mengelola berbagai jenis latihan dan gerakan, Jadwal Workout untuk mengelola jadwal latihan berdasarkan waktu (Pagi, Siang, Sore, Malam), Food Plan untuk mengelola rencana makan dan nutrisi harian dengan informasi kalori, protein, carbs, dan lemak, Chatbot AI sebagai asisten virtual untuk membantu pertanyaan terkait fitness dan gym, Feedback untuk mengelola kritik dan saran dari anggota, Edit Profil untuk mengelola data profil user, Ubah Password untuk keamanan akun, serta Pengaturan aplikasi meliputi dark mode dan light mode. Aplikasi ini terintegrasi dengan backend API untuk sinkronisasi data.',
-    technologies: ['Flutter', 'Dart', 'Firebase', 'Google Sign In'],
+    technologies: ['Flutter', 'Dart', 'Firebase'],
     image: '/projects/19.jpg',
     link: 'https://github.com/ardhikaxx/mobile-gym',
-    year: 2025
+    year: 2026
+  },
+  {
+    id: 20,
+    title: 'Website Sistem Analisis Review Aplikasi OSS Dengan Metode Naive Bayes',
+    description: 'Sistem analisis review aplikasi OSS (Online Single Submission) menggunakan metode Naive Bayes untuk melakukan sentimen analisis terhadap ulasan pengguna. Fitur lengkap meliputi: Dashboard untuk melihat ringkasan analisis, Import CSV untuk mengimpor data ulasan dari file CSV, Analisis Sentimen untuk menjalankan proses analisis menggunakan machine learning Naive Bayes dengan deteksi sentimen positif, negatif, dan netral beserta confidence score, Riwayat Analisis untuk melihat histori analisis yang telah dilakukan, Detail Analisis untuk melihat hasil analisis lengkap meliputi jumlah review positif, negatif, netral, rata-rata confidence, dan contoh ulasan, Export CSV dan Excel untuk mengekspor hasil analisis ke format file yang diinginkan, Manajemen Model untuk memeriksa status file model machine learning dan perbaikan model dari backup, serta Fitur Fallback untuk fallback ke analisis berbasis rating jika model ML gagal dijalankan.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript', 'Python', 'Naive Bayes ML'],
+    image: '/projects/20.jpg',
+    link: 'https://github.com/ardhikaxx/sistem-nara',
+    year: 2026
   },
 ];
