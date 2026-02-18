@@ -81,26 +81,3 @@ porto-app/
 ├── tailwind.config.ts # Tailwind config
 └── package.json
 ```
-
-## Kontribusi
-
-1. Fork repository ini
-2. Buat branch baru (`git checkout -b fitur- baru`)
-3. Commit perubahan (`git commit -m 'Tambah fitur baru'`)
-4. Push ke branch (`git push origin fitur baru`)
-5. Buat Pull Request
-
-## Lisensi
-
-MIT License
-
-## Kontak
-
-- Instagram: [@mumet.in](https://www.instagram.com/mumet.in/)
-- WhatsApp: +62 859-3364-8537
-- GitHub: [ardhikaxx](https://github.com/ardhikaxx)
-- Website: [mumetin.vercel.app](https://mumetin.vercel.app/)
-
----
-
-Dibuat dengan ❤️ oleh Porto Mumet.in
