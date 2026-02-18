@@ -30,10 +30,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Solusi Digital <span className="text-[#c41e2e]">Terbaik</span> Untuk Bisnis Anda
+              Dari <span className="text-[#c41e2e]">Mumet</span>, Jadi <span className="text-[#c41e2e]">Beres</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Kami adalah tim pengembang profesional yang siap membantu Anda membangun website dan aplikasi mobile yang modernas dan handal.
+              Bikin produk digital yang rapi, cepat, dan siap jual. Website, Mobile App, AI/ML, IoT, dan UI/UX dari ide sampai launch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="bg-[#c41e2e] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#a01828] transition-colors">
