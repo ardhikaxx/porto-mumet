@@ -2,6 +2,7 @@ import { projects } from "./data/projects";
 import { services } from "./data/services";
 import dynamic from "next/dynamic";
 import ProjectCard from "./components/ProjectCard";
+import ServiceIcons from "./components/ServiceIcons";
 
 const Navbar = dynamic(() => import("./components/Navbar"), { ssr: false });
 const Footer = dynamic(() => import("./components/Footer"), { ssr: false });
@@ -31,9 +32,22 @@ export default function Home() {
           </div>
         </section>
 
-        <LazyProjects />
+        <section id="projects" className="py-24 px-4 bg-white dark:bg-[#0a0a0a]">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Projek <span className="text-[#c41e2e]">Terbaru</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          </div>
+        </section>
 
-        <LazyServices />
+        <ServiceIcons services={services} />
 
         <section id="contact" className="py-24 px-4 bg-[#c41e2e]">
           <div className="max-w-4xl mx-auto text-center">
@@ -50,28 +64,4 @@ export default function Home() {
       <Footer />
     </div>
   );
-}
-
-function LazyProjects() {
-  return (
-    <section id="projects" className="py-24 px-4 bg-white dark:bg-[#0a0a0a]">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Projek <span className="text-[#c41e2e]">Terbaru</span>
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function LazyServices() {
-  const ServiceIcons = dynamic(() => import("./components/ServiceIcons"), { ssr: false });
-  return <ServiceIcons services={services} />;
 }
