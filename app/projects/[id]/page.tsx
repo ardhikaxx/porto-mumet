@@ -3,6 +3,7 @@ import Link from "next/link";
 import { projects } from "../../data/projects";
 import { notFound } from "next/navigation";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -166,19 +167,7 @@ export default async function ProjectDetail({ params }: Props) {
         </div>
       </section>
 
-      <footer className="bg-[#0a0a0a] text-white py-10 px-4 border-t border-[#262626]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#c41e2e] to-[#a01828] rounded-xl flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold">Porto Mumet.in</span>
-          </div>
-          <p className="text-gray-400 text-sm">&copy; 2026 Porto Mumet.in. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
