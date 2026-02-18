@@ -188,4 +188,13 @@ export const projects = [
     link: 'https://github.com/ardhikaxx/web-sipkes.git',
     year: 2026
   },
+  {
+    id: 22,
+    title: 'Website Sistem Manajemen Keuangan Masjid Jami\' Al-Muttaqiin Jember',
+    description: 'Website sistem manajemen keuangan untuk Masjid Jami\' Al-Muttaqiin Jember yang menyediakan fitur lengkap meliputi: Halaman publik untuk Informasi umum masjid, Dashboard admin dengan visualisasi data keuangan menggunakan chart, Manajemen Keuangan untuk mencatat dan mengelola transaksi pemasukan dan pengeluaran dengan fitur statistik keuangan, Manajemen Laporan untuk menghasilkan laporan keuangan dan cetakan, serta Pengaturan Profil untuk mengelola data admin sistem. Sistem ini menggunakan autentikasi berbasis middleware untuk keamanan admin.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/22.jpg',
+    link: 'https://github.com/ardhikaxx/sistem-informasi-manajemen-keuangan-masjid',
+    year: 2026
+  },
 ];
