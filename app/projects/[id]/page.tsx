@@ -144,7 +144,7 @@ export default async function ProjectDetail({ params }: Props) {
           <p className="text-white/80 mb-8 text-lg">Kami siap membantu Anda membuat projek digital yang profesional dan moderno.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://mumetin.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-[#c41e2e] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg">Hubungi Kami</a>
-            <a href="/#projects" className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#c41e2e] transition-colors">Lihat Semua Projek</a>
+            <Link href="/#projects" className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#c41e2e] transition-colors">Lihat Semua Projek</Link>
           </div>
         </div>
       </section>
