@@ -253,18 +253,20 @@ export default async function ProjectDetail({ params }: Props) {
             Kami siap membantu Anda membuat projek digital yang profesional dan moderno.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/#contact"
-              className="inline-block bg-white text-[#c41e2e] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg"
-            >
+          <a
+            href="https://mumetin.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 bg-white text-[#c41e2e] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
+          >
               Hubungi Kami
-            </Link>
-            <Link
+            </a>
+            <a
               href="/#projects"
               className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#c41e2e] transition-colors"
             >
               Lihat Semua Projek
-            </Link>
+            </a>
           </div>
         </div>
       </section>
