@@ -130,7 +130,7 @@ export const projects = [
     title: 'Website Sistem Perpustakaan MAN 2 Payakumbuh',
     description: 'Website sistem perpustakaan digital untuk MAN 2 Payakumbuh yang menyediakan fitur lengkap meliputi: Dashboard untuk memantau statistik dan aktivitas perpustakaan, Manajemen Buku untuk mengelola data buku, katalog, dan inventaris, Manajemen Admin untuk mengelola data administrator sistem, Laporan untuk menghasilkan laporan perpustakaan, serta Pengaturan untuk konfigurasi sistem.',
     technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
-    image: '/projects/16.jpg',
+    image: '/projects/15.jpg',
     link: 'https://github.com/ardhikaxx/website-perpus-man2-payakumbuh',
     year: 2025
   },
