@@ -25,14 +25,14 @@ export default function ProjectCard({ project, variant = "default" }: ProjectCar
         href={`/projects/${project.id}`}
         className="group bg-white dark:bg-[#171717] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-[#262626] hover:border-[#c41e2e]/50"
       >
-        <div className="relative h-44 bg-linear-to-br from-gray-100 dark:from-[#262626] to-gray-50 dark:to-[#171717] overflow-hidden">
+        <div className="relative h-44 bg-gradient-to-br from-gray-100 dark:from-[#262626] to-gray-50 dark:to-[#171717] overflow-hidden">
           <Image
             src={project.image}
             alt={project.title}
             fill
             className="object-cover group-hover:scale-110 transition-transform duration-500"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute top-3 right-3">
             <span className="px-2 py-1 bg-gray-900/80 dark:bg-[#0a0a0a]/80 backdrop-blur-sm text-white text-xs font-medium rounded-md">
               {project.year}
@@ -63,14 +63,14 @@ export default function ProjectCard({ project, variant = "default" }: ProjectCar
       href={`/projects/${project.id}`}
       className="group bg-white dark:bg-[#171717] rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-[#262626] hover:border-[#c41e2e]/50"
     >
-      <div className="relative h-52 bg-linear-to-br from-gray-100 dark:from-[#262626] to-gray-50 dark:to-[#171717] overflow-hidden">
+      <div className="relative h-52 bg-gradient-to-br from-gray-100 dark:from-[#262626] to-gray-50 dark:to-[#171717] overflow-hidden">
         <Image
           src={project.image}
           alt={project.title}
           fill
           className="object-cover group-hover:scale-110 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         <div className="absolute top-3 right-3">
           <span className="px-3 py-1 bg-gray-900/80 dark:bg-[#0a0a0a]/80 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
             {project.year}
