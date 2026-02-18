@@ -1,0 +1,58 @@
+export const projects = [
+  {
+    id: 1,
+    title: "E-Commerce Platform",
+    description: "Platform e-commerce lengkap dengan fitur keranjang belanja, pembayaran, dan manajemen produk. Dilengkapi dashboard admin untuk监控 penjualan.",
+    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    image: "/assets/projek/1.svg",
+  },
+  {
+    id: 2,
+    title: "Mobile Banking App",
+    description: "Aplikasi mobile banking dengan fitur transfer, cek saldo, dan histori transaksi. Dilengkapi dengan keamanan biometrik dan notifikasi real-time.",
+    technologies: ["React Native", "TypeScript", "Firebase", "Redux"],
+    image: "/assets/projek/2.svg",
+  },
+  {
+    id: 3,
+    title: "Company Portfolio",
+    description: "Website portfolio perusahaan dengan desain modern dan responsif. Menampilkan layanan, team, dan kontak dengan animasi smooth.",
+    technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
+    image: "/assets/projek/3.svg",
+  },
+  {
+    id: 4,
+    title: "Restaurant Reservation",
+    description: "Sistem reservasi restoran dengan pemilihan meja, menu, dan pembayaran online. Includes waitlist management.",
+    technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
+    image: "/assets/projek/4.svg",
+  },
+  {
+    id: 5,
+    title: "Healthcare Dashboard",
+    description: "Dashboard untuk manajemen pasien, jadwal dokter, dan laporan medis. Fitur export PDF dan integrasi dengan sistem RS.",
+    technologies: ["React", "Django", "PostgreSQL", "Chart.js"],
+    image: "/assets/projek/5.svg",
+  },
+  {
+    id: 6,
+    title: "Social Media App",
+    description: "Aplikasi sosial media dengan fitur post, like, comment, dan direct message. Supports real-time updates.",
+    technologies: ["Flutter", "Firebase", "GetX", "Dio"],
+    image: "/assets/projek/6.svg",
+  },
+  {
+    id: 7,
+    title: "Learning Management System",
+    description: "Platform pembelajaran online dengan video streaming, kuis, dan progress tracking. Dilengkapi dengan forum diskusi.",
+    technologies: ["Next.js", "Prisma", "MySQL", "AWS S3"],
+    image: "/assets/projek/7.svg",
+  },
+  {
+    id: 8,
+    title: "POS System",
+    description: "Sistem point of sale untuk retail dengan inventori management, laporan penjualan, dan multi-user support.",
+    technologies: ["Electron", "React", "SQLite", "Thermal Printer"],
+    image: "/assets/projek/8.svg",
+  },
+];
