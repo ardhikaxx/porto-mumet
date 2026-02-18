@@ -197,4 +197,13 @@ export const projects = [
     link: 'https://github.com/ardhikaxx/sistem-informasi-manajemen-keuangan-masjid',
     year: 2026
   },
+  {
+    id: 23,
+    title: 'Website Apocare - Integrated Pharmacy Management System',
+    description: 'Website sistem manajemen apotek terintegrasi yang menyediakan fitur lengkap meliputi: Autentikasi dan manajemen pengguna dengan multi-role (admin, apoteker, kasir, gudang), Dashboard dengan visualisasi data dan smart search, Master data meliputi pemasok, kategori, satuan, dan produk dengan fitur export Excel/CSV/PDF, Manajemen persediaan meliputi stok, penyesuaian stok, dan opname, Transaksi meliputi penjualan, pembelian, retur pembelian, dan retur penjualan dengan fitur sync offline, Manajemen resep dokter dengan tahapan pengambilan obat, Manajemen pelanggan dan dokter, Laporan lengkap meliputi laporan penjualan, pembelian, persediaan, keuangan, dan pelanggan dengan fitur export, Manajemen pengguna meliputi peran dan hak akses, Audit trail untuk melacak aktivitas pengguna, Backup database, dan manajemen session pengguna. Sistem ini mendukung fitur favorite produk dan update harga massal.',
+    technologies: ['Laravel', 'Bootstrap', 'PHP', 'CSS', 'JavaScript'],
+    image: '/projects/23.jpg',
+    link: 'https://github.com/ardhikaxx/apocare',
+    year: 2026
+  },
 ];
