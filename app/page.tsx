@@ -64,7 +64,7 @@ export default function Home() {
 
         <ServiceIcons services={services} />
 
-        <section id="contact" className="py-24 px-4 bg-gradient-to-r from-[#c41e2e] to-[#a01828]">
+        <section id="contact" className="py-24 px-4 bg-linear-to-r from-[#c41e2e] to-[#a01828]">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Siap Mengembangkan Bisnis Anda?
